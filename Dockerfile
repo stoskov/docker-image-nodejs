@@ -1,5 +1,5 @@
 FROM ubuntu:15.04
-LABEL version="4.1.0"
+LABEL version="4.2.2"
 
 RUN apt-get update \
 	&& apt-get install -y curl
@@ -18,7 +18,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 4.1.0
+ENV NODE_VERSION 4.2.2
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
